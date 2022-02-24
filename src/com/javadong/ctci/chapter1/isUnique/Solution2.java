@@ -1,5 +1,7 @@
 package com.javadong.ctci.chapter1.isUnique;
 
+import org.junit.Test;
+
 public class Solution2 {
 
     /**
@@ -19,8 +21,13 @@ public class Solution2 {
             // 将比特位 1 移动到字符所在的位置 并且和checker相与判断是否有重复
             if ((checker & (1 << val)) > 0) return false;
             // 将对应比特位进行标记
-            checker |= val;
+            checker |= (1 << val);
         }
         return true;
+    }
+
+    @Test
+    public void testSolution() {
+        System.out.println(isUnique("aa"));
     }
 }
