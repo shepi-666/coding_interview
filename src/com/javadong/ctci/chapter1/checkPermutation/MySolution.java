@@ -2,8 +2,6 @@ package com.javadong.ctci.chapter1.checkPermutation;
 
 import org.junit.Test;
 
-import java.util.Arrays;
-
 /**
  * 给定两个字符串，请编写程序，确定其中一个字符串的字符重
  * 新排列后，能否变成另一个字符串
